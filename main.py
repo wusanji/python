@@ -69,6 +69,6 @@ def detect_rectangles_from_video(video_path):
     cap.release()
     cv2.destroyAllWindows()
 
-
+#wusan
 if __name__ == "__main__":
     detect_rectangles_from_video('input.mp4')
