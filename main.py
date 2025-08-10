@@ -15,7 +15,7 @@ def detect_rectangles_from_video(video_path):
             break
 
         # 调整每一帧的大小（例如，设置为1920x1200）
-        frame_resized = cv2.resize(frame, (1280, 960))  # 设置图像大小为1920x1200
+        frame_resized = cv2.resize(frame, (1080, 675))  # 设置图像大小为1920x1200
 
         # 获取图像的实际宽度和高度
         height, width = frame_resized.shape[:2]
