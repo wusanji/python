@@ -1,7 +1,4 @@
-编写GitHub仓库的 README.md 时，核心是清晰展示仓库的用途、结构、使用方法等关键信息，方便他人快速了解仓库内容。结合你提供的仓库信息（包含 wusanji 文件夹、 .idea 文件夹、 input.mp4 视频文件、 main.py Python文件，且最近提交信息均为“test”），可以按照以下思路来写：
- 
-示例 README.md
- 
+
 # wusanji/python
 
 这是一个的Python项目仓库，包含项目相关的代码文件、资源文件及配置文件夹。
