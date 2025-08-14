@@ -27,15 +27,19 @@
  
 2. 进入项目目录：
     ```bash
+    
     cd python
 3. 进行模块下载:
     ```bash
+    
     pip install numpy
     pip install opencv-python
  
 4. 运行主程序（需安装Python环境）：
-python main.py
- 
+    ```bash  
+    
+     python main.py
+
  
 后续计划
  
