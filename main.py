@@ -14,26 +14,13 @@ def detect_rectangles_from_video(video_path):
         if not ret:
             break
 
-        # 调整每一帧的大小（例如，设置为1920x1200）
-        frame_resized = cv2.resize(frame, (1080, 675))  # 设置图像大小为1920x1200
-
-        # 获取图像的实际宽度和高度
+        frame_resized = cv2.resize(frame, (1080, 675))
         height, width = frame_resized.shape[:2]
-
-        # 创建窗口
         cv2.imshow('Rectangle Detection', frame_resized)
-
-        # 设置显示窗口的大小为图像的实际尺寸
         cv2.resizeWindow('Rectangle Detection', width, height)
-
-        # 转为灰度图
         gray = cv2.cvtColor(frame_resized, cv2.COLOR_BGR2GRAY)
-        # 高斯模糊，减少噪声
         blurred = cv2.GaussianBlur(gray, (5, 5), 0)
-        # 边缘检测
         edges = cv2.Canny(blurred, 50, 150)
-
-        # 找轮廓
         contours, _ = cv2.findContours(edges, cv2.RETR_EXTERNAL, cv2.CHAIN_APPROX_SIMPLE)
 
         for cnt in contours:
